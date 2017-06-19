@@ -4,3 +4,26 @@
 - 2.地点提醒，平时会想着到了目的地做一些小事情，但往往经常忘记，比如出寝室需要带上作业本，我们可以在APP中设置，离开提醒并可以设置备忘消息。但用户离开寝室一段距离，APP自动会通过震动和铃声的方式并显示备忘消息来提醒用户。
 - 3.打通物联网与智能设备，如果使用搭载Android Wear的智能手表，手机APP会与智能手表连通，并且闹钟提醒与地点提醒都将同步在手表上，响铃时智能手表也会给用于用户相应的提醒反馈。
 - 4.增加天气查询功能，响铃时也会显示当前实时的天气信息，给用户提供穿衣建议，空气质量等信息。
+
+
++MIT License
+ +
+ +Copyright (c) 2017 Humin
+ +
+ +Permission is hereby granted, free of charge, to any person obtaining a copy
+ +of this software and associated documentation files (the "Software"), to deal
+ +in the Software without restriction, including without limitation the rights
+ +to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ +copies of the Software, and to permit persons to whom the Software is
+ +furnished to do so, subject to the following conditions:
+ +
+ +The above copyright notice and this permission notice shall be included in all
+ +copies or substantial portions of the Software.
+ +
+ +THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ +IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ +FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ +AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ +LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ +OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ +SOFTWARE.
