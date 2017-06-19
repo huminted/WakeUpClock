@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+ 	<PreferenceCategory android:title="EditTextPreference">	
+ 	<EditTextPreference android:key="edit_0"
+		android:title="输入信息_A"
+		android:summary="请输入您的信息"
+		android:defaultValue="请输入信息"
+		android:dialogTitle="输入框">
+	</EditTextPreference>
+	 	
+	 <EditTextPreference android:key="edit_1"
+		android:title="输入信息_B"
+		android:summary="请输入您的信息"
+		android:defaultValue="请输入信息"
+		android:dialogTitle="输入框">
+	</EditTextPreference>
+	</PreferenceCategory>
+</PreferenceScreen>

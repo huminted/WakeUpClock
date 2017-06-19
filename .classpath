@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.andmore.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.andmore.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.andmore.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_QQZone_1.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_QQZone_2.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_Sina.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/RippleBackground"/>
+	<classpathentry kind="lib" path="F:/Wakeup_1/libs/umeng-analytics-v6.1.0.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

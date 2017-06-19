@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2685bc"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/stopservice"
+        android:layout_width="96dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="174dp"
+        android:background="@drawable/close"
+        />
+
+    <TextView
+        android:id="@+id/remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stopservice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="92dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="70sp" />
+
+</RelativeLayout>
+<!-- From: file:/F:/Wakeup_1/res/layout/wifiremind.xml -->

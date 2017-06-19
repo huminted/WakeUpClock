@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    >
+
+    <TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TabWidget>
+
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:background="@drawable/newlistbg" >
+
+        <com.lensent.wakeup.AlarmView
+            android:id="@+id/tabalarm"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+               
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_weight="0.64"
+                android:dividerHeight="20dip"
+                android:headerDividersEnabled="false" >
+            </ListView>
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="@drawable/newadd" 
+              />
+            
+            
+            <View
+                android:id="@+id/view2"
+                android:layout_width="12dp"
+                android:layout_height="12dp" />
+            
+        </com.lensent.wakeup.AlarmView>
+        
+
+    </FrameLayout>
+
+</TabHost>

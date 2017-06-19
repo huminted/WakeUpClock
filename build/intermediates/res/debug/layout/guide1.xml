@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/guide_shake"
+    android:orientation="horizontal" >
+
+</LinearLayout><!-- From: file:/F:/Wakeup_1/res/layout/guide1.xml -->

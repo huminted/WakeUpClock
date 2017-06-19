@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+ <PreferenceCategory android:title="RingtonePreference">	
+ 	 <RingtonePreference  
+   		 android:key="ringtone_0"  
+   		 android:summary="选择系统铃声A"  
+   		 android:title="铃声设置"  
+   		 android:ringtoneType="all"  
+   		 android:showSilent="true" ></RingtonePreference>
+    
+    <RingtonePreference  
+    	android:key="ringtone_!"  
+    	android:summary="选择系统铃声B"  
+    	android:title="铃声设置"  
+    	android:ringtoneType="all"  
+    	android:showSilent="true" ></RingtonePreference>
+    
+    </PreferenceCategory>
+</PreferenceScreen>

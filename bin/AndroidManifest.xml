@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lensent.wakeup"
+    android:versionCode="4"
+    android:versionName="2.0.3.29" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="22" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.lensent.wakeup" >
+    </instrumentation>
+
+    <application
+        android:name="MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/newlogo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+         <meta-data
+            android:name="com.thinkland.juheapi.openid"
+            android:value="JHcdff24c5f0e30bcaecce6b08e096b677" />
+        <activity
+            android:name="com.lensent.wakeup.Welcome"
+            android:theme="@style/Full" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lensent.wakeup.Main" >
+        </activity>
+        <activity android:name="com.lensent.wakeup.Miaobiao" >
+        </activity>
+
+        <service android:name="com.lensent.wakeup.Myservice" >
+        </service>
+
+        <receiver android:name="com.lensent.service.Widget" >
+            <intent-filter>
+                <action android:name="timer" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" >
+                </action>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget01" />
+        </receiver>
+        <receiver
+            android:name="com.lensent.wakeup.BootReceiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.lensent.service.Foundwifi" >
+        </service>
+
+        <activity android:name=".AlarmView" >
+        </activity>
+        <activity android:name="com.lensent.wakeup.AlarmActivity" >
+            <intent-filter>
+                <action android:name="alarm" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lensent.wakeup.Wifi" >
+        </activity>
+
+        <service android:name="com.lensent.service.Home" >
+        </service>
+        <service
+            android:name="com.lensent.service.Back"
+            android:enabled="true" >
+        </service>
+
+        <activity android:name="com.lensent.wakeup.AlarmList" >
+        </activity>
+        <activity
+            android:name="wakeup.guide.GuideActivity"
+            android:theme="@style/Full" >
+        </activity>
+        <activity android:name=".Edit" >
+        </activity>
+        <activity
+            android:name="cn.domob.android.ads.DomobActivity"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+
+        <receiver android:name=".AlarmReciver" >
+        </receiver>
+
+        <activity android:name="com.lensent.service.Wifiremind" >
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.demo.WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="cCom.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!-- 分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="53b82bde56240b45db0d0180" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="53b82bde56240b45db0d0180" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="360SHOUJIZHUSHOU" />
+
+        <activity android:name="AuthActivity" >
+        </activity>
+        <activity android:name="wakeup.guide.GuideViewDoor" >
+        </activity>
+       
+        <activity android:name="Timer" >
+        </activity>
+         <activity android:name="com.lensent.tools.PureNetUtil" >
+        </activity>
+        <activity android:name="AlarmAvtivity_Normal" >
+        </activity>
+
+        <service android:name="com.lensent.service.AlarmService" >
+        </service>
+        <service android:name="com.lensent.service.AlarmService" >
+        </service>
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+         
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="ZxingScan"></activity>
+      
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID-->
+                <data android:scheme="tencent1101189591" /> 
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+        
+    </application>
+
+</manifest>

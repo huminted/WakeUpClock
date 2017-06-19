@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2685bc"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="111dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/wifi_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="地点提醒"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="207dp"
+        android:gravity="left"
+        tools:ignore="ButtonStyle" >
+
+        <Button
+            android:id="@+id/left_btn"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/spinner1"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/leftbtn" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="1120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/remind"
+            android:layout_centerVertical="true" />
+
+        <EditText
+            android:id="@+id/remindtv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/spinner1"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/remindtv1"
+            android:layout_marginLeft="32dp"
+            android:layout_toRightOf="@+id/remind"
+            android:text="备注"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/name"
+            android:layout_alignRight="@+id/left_btn"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="14dp"
+            android:text="周围WIFI,你可以把他们作为提醒地点"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="198dp" >
+
+        <Button
+            android:id="@+id/arrive_btn"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/spinner2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/arrivebtn"
+            tools:ignore="ButtonStyle" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="1120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="17dp"
+            android:layout_toLeftOf="@+id/remindtv2" />
+
+        <EditText
+            android:id="@+id/remindtv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/arrive_btn"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/textView2"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/arrive_btn"
+            android:layout_marginTop="20dp"
+            android:text="已保存WIFI,你可以把他们作为提醒地点"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/F:/Wakeup_1/res/layout/wifi.xml -->

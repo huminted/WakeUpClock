@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">醒来</string>
+    <string name="dummy_button">你好</string>
+    <string name="dummy_content">你好</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tab1">闹钟</string>
+    <string name="init_time_second">00:00</string>  
+    <string name="init_time_100millisecond">00:00:0</string>  
+    <string name="menu_setting_timer_unit">设置计时单位</string>  
+    <string name="menu_about">关于</string>  
+    <string name="menu_exit">退出</string>  
+    <string name="menu_setting_second">1秒</string>  
+    <string name="menu_setting_100milisec">0.1秒</string> 
+
+    <color name="blue">#44cef6</color>
+
+    <string name="_">"  铃声"</string>
+    <string name="send">send</string>
+    <string name="textview">TextView</string>
+    <string name="title_activity_activity2">Activity2</string>
+    <string name="one"></string>
+    <string name="two"></string>
+    <string name="three"></string>
+    <string name="four"></string>
+    <string name="chronometer">Chronometer</string>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar"></style>
+
+    <string name="_1">闹钟1</string>
+    <string name="_2">菜单2</string>
+    <string name="title_activity_about">About</string>
+    <string name="botto">Botto</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="digitalclock">DigitalClock</string>
+    <string name="_10">10</string>
+    <string name="todo">TODO</string>
+    <string name="add">add</string>
+    <string name="_4">闹钟4</string>
+    <string name="_wifi">获取wifi</string>
+    <string name="_05_20">05:20</string>
+
+</resources>

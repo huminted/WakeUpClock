@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<view
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    class="com.actionbarsherlock.internal.widget.ScrollingTabContainerView$TabView"
+    style="?attr/actionBarTabStyle"
+/><!-- From: file:/F:/Wakeup_1/ActionBarSherlock/res/layout/abs__action_bar_tab.xml --><!-- From: file:/F:/Wakeup_1/build/intermediates/exploded-aar/Wakeup_1/ActionBarSherlock/unspecified/res/layout/abs__action_bar_tab.xml -->

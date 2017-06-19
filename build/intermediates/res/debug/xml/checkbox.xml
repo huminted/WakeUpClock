@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  	<PreferenceCategory android:title="CheckBoxPreference">	
+  	<CheckBoxPreference android:key="checkbox_0"
+  	    android:title="CheckBox_A"
+		android:summary="这是一个勾选框A" >
+	</CheckBoxPreference>
+	
+  	</PreferenceCategory>
+</PreferenceScreen>
+<!-- From: file:/F:/Wakeup_1/res/xml/checkbox.xml -->

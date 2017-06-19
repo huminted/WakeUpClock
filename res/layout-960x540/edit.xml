@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@drawable/checkbox"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/newlistbg"
+    android:orientation="vertical" >
+
+<View
+    android:id="@+id/view4"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="编辑闹钟"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/timetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/_05_20"
+        android:textColor="#ffffff"
+        android:textSize="60sp" />
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="290dp"
+        android:layout_gravity="center"
+        android:background="@drawable/newlayoutbg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:gravity="left" >
+
+                <Button
+                    android:id="@+id/choose"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@+id/time1"
+                    android:layout_alignBottom="@+id/time1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/newsavebtn"
+                    android:focusable="false"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:text="铃声"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/sblue"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="296dp"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:id="@+id/time4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:text="震动"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/sblue"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/texVi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/vibrator_cb"
+                android:layout_alignBottom="@+id/vibrator_cb"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:clickable="true"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <CheckBox
+                android:id="@+id/vibrator_cb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/time4"
+                android:layout_alignRight="@+id/texVi"
+                android:background="@drawable/checkbox"
+                android:button="@drawable/space"
+                android:checked="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="281dp"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:id="@+id/textVi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/nobother_cb"
+                android:layout_marginLeft="40dp"
+                android:text="睡眠防扰"
+                android:textColor="@color/sblue"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/nobother_cb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/textVi"
+                android:background="@drawable/checkbox"
+                android:button="@drawable/space"
+                android:checked="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="340dp"
+            android:layout_height="120dp" >
+
+            <TextView
+                android:id="@+id/remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:text="备注信息"
+                android:textColor="@color/sblue"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/shaketv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/remind"
+                android:layout_alignBottom="@+id/remind"
+                android:layout_toRightOf="@+id/remind"
+                android:ems="10"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <requestFocus />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/newokbtn" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="348dp" />
+
+</LinearLayout>
